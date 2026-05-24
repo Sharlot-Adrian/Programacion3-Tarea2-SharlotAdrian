@@ -74,6 +74,8 @@ public class VehiculoMenu {
                         if (placaBuscada.equals(registroVehiculos.get(i).getPlaca())){
                             System.out.println("¡Vehiculo encontrado!");
                             registroVehiculos.get(i).mostrarInformacionGeneral();
+
+                            break;
                         }
                         else
                             System.out.println("Vehiculo no encontrado.");
@@ -85,10 +87,13 @@ public class VehiculoMenu {
                 case 4:{
                     System.out.println("[MOSTRAR VEHICULOS POR MARCA ]");
                     System.out.println("*---------------------------------*");
+                    System.out.println("Ingrese la marca de vehiculo que desea visualizar: ");
+                    String marca = scanner.nextLine();
 
-                    for (int i = 0; i < registroVehiculos.size();i++){
-                        System.out.print("\nVehiculo #"+ (i+1)+": ");
-                        registroVehiculos.get(i).getMarca();
+                    for (int i = 0; i < registroVehiculos.size(); i++){
+                        if ((registroVehiculos.get(i).getMarca()).equals(marca)){
+                            registroVehiculos.get(i).mostrarInformacionGeneral();
+                        }
                     }
 
                     break;
