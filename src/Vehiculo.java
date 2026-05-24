@@ -72,7 +72,7 @@ public class Vehiculo {
         System.out.println("MODELO: " + getModelo());
         System.out.println("AÑO: " + getYear());
         System.out.println("COLOR: " + getColor());
-        System.out.println("PRECIO: " + getPrecio());
+        System.out.println("PRECIO: " +"US$"+ getPrecio());
         System.out.println("*---------------------------------------------*");
 
     }
