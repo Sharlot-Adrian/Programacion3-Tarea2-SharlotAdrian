@@ -57,6 +57,7 @@ public class VehiculoMenu {
                 case 2:{
 
                     System.out.println("[ MOSTRAR VEHICULOS ]");
+                    System.out.println("*---------------------------------*");
                     for (int i = 0; i < registroVehiculos.size(); i++){
                         registroVehiculos.get(i).mostrarInformacionGeneral();
                     }
@@ -93,6 +94,7 @@ public class VehiculoMenu {
                     break;
                 }
                 case 5:{
+                    System.out.println("Saliendo...");
                     break;
                 }
                 default:{
