@@ -55,6 +55,12 @@ public class VehiculoMenu {
                     break;
                 }
                 case 2:{
+
+                    System.out.println("[ MOSTRAR VEHICULOS ]");
+                    for (int i = 0; i < registroVehiculos.size(); i++){
+                        registroVehiculos.get(i).mostrarInformacionGeneral();
+                    }
+                    
                     break;
                 }
                 case 3:{
