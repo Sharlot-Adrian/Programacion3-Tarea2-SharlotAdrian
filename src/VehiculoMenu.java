@@ -25,7 +25,53 @@ public class VehiculoMenu {
             opcion = scanner.nextInt();
             scanner.nextLine();
 
-            
+            switch(opcion){
+                case 1:{
+                    System.out.println("\n[ REGISTRAR VEHICULO ]"); //Atributos de un Vehiculo: 
+                    // String placa, String marca
+                    //String modelo, int year, String color, double precio
+                    System.out.println("*---------------------------------*");
+                    System.out.println("Ingrese la placa: ");
+                    String placa = scanner.nextLine();
+
+                    System.out.println("Ingrese la marca: ");
+                    String marca = scanner.nextLine();
+
+                    System.out.println("Ingrese el modelo: ");
+                    String modelo = scanner.nextLine();
+
+                    System.out.println("Ingrese el año: ");
+                    int year = scanner.nextInt();
+                    scanner.nextLine();
+
+                    System.out.println("Ingrese el color: ");
+                    String color = scanner.nextLine();
+
+                    System.out.println("Ingrese el precio: ");
+                    double precio = scanner.nextDouble();
+
+                    registroVehiculos.add(new Vehiculo(placa, marca, modelo, year, color, precio));
+
+                    break;
+                }
+                case 2:{
+                    break;
+                }
+                case 3:{
+                    break;
+                }
+                case 4:{
+                    break;
+                }
+                case 5:{
+                    break;
+                }
+                default:{
+                    System.out.println("Esa opcion no es valida.");
+                    break;
+                }
+
+            }
 
         } while (opcion != 5);
 
