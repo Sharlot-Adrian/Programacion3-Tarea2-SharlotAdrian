@@ -60,13 +60,36 @@ public class VehiculoMenu {
                     for (int i = 0; i < registroVehiculos.size(); i++){
                         registroVehiculos.get(i).mostrarInformacionGeneral();
                     }
-                    
+
                     break;
                 }
                 case 3:{
+                    System.out.println("\n[ BUSCAR VEHICULO POR PLACA ]");
+                    System.out.println("*---------------------------------*");
+                    System.out.println("Ingrese la placa del vehiculo que desea buscar: ");
+                    String placaBuscada = scanner.nextLine();
+
+                    for (int i = 0; i < registroVehiculos.size(); i++){
+                        if (placaBuscada.equals(registroVehiculos.get(i).getPlaca())){
+                            System.out.println("¡Vehiculo encontrado!");
+                            registroVehiculos.get(i).mostrarInformacionGeneral();
+                        }
+                        else
+                            System.out.println("Vehiculo no encontrado.");
+                    }
+
+
                     break;
                 }
                 case 4:{
+                    System.out.println("[MOSTRAR VEHICULOS POR MARCA ]");
+                    System.out.println("*---------------------------------*");
+
+                    for (int i = 0; i < registroVehiculos.size();i++){
+                        System.out.print("\nVehiculo #"+ (i+1)+": ");
+                        registroVehiculos.get(i).getMarca();
+                    }
+
                     break;
                 }
                 case 5:{
