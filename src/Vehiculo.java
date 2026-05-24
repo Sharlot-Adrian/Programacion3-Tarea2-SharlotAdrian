@@ -63,4 +63,17 @@ public class Vehiculo {
     public void setPrecio(double precio){
         this.precio = precio;
     }
+
+    public void mostrarInformacionGeneral(){
+        System.out.println("\n[ INFORMACION DEL VEHICULO: " + getMarca() + " " + getModelo()+" ]");
+        System.out.println("*---------------------------------------------*");
+        System.out.println("PLACA: " + getPlaca());
+        System.out.println("MARCA: " + getMarca());
+        System.out.println("MODELO: " + getModelo());
+        System.out.println("AÑO: " + getYear());
+        System.out.println("COLOR: " + getColor());
+        System.out.println("PRECIO: " + getPrecio());
+        System.out.println("*---------------------------------------------*");
+
+    }
 }
